@@ -28,7 +28,8 @@ class Command(BaseCommand):
             if item['model'] == 'catalog.product':
                 products_for_create.append(
                     Product(pk=item['pk'], name=item['fields']['name'], description=item['fields']['description'],
-                            preview=item['fields']['preview'], category=Category.objects.get(pk=item['fields']['category']),
+                            preview=item['fields']['preview'],
+                            category=Category.objects.get(pk=item['fields']['category']),
                             price=item['fields']['price'], created_at=item['fields']['created_at'],
                             updated_at=item['fields']['updated_at'])
                 )
