@@ -13,8 +13,8 @@
                 <ul class="list-unstyled mt-3 mb-4 text-start m-3">
                     <img class="card-img-top" src="{{ product.preview|mymedia }}"
              alt="Card image cap">
-                    <li>- {{product.description|title}}</li>
                     <li>- {{product.category|title}}</li>
+                    <li>- {{product.description}}</li>
                     <li>- создано:{{product.created_at}}</li>
                     <li>- изменено:{{product.updated_at}}</li>
                 </ul>
