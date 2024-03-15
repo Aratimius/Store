@@ -6,17 +6,17 @@
     <div class="col-lg-9 col-md-6 col-sm-12 mx-auto">
         <div class="card mb-4 box-shadow">
             <div class="card-header text-center">
-                <h4 class="my-0 font-weight-normal">{{product.name|title}}</h4>
+                <h4 class="my-0 font-weight-normal">{{object.name|title}}</h4>
             </div>
             <div class="card-body text-center">
-                <h1 class="card-title pricing-card-title">{{product.price}}р.</h1>
+                <h1 class="card-title pricing-card-title">{{object.price}}р.</h1>
                 <ul class="list-unstyled mt-3 mb-4 text-start m-3">
-                    <img class="card-img-top" src="{{ product.preview|mymedia }}"
+                    <img class="card-img-top" src="{{ object.preview|mymedia }}"
              alt="Card image cap">
-                    <li>- {{product.category|title}}</li>
-                    <li>- {{product.description}}</li>
-                    <li>- создано:{{product.created_at}}</li>
-                    <li>- изменено:{{product.updated_at}}</li>
+                    <li>- {{object.category|title}}</li>
+                    <li>- {{object.description}}</li>
+                    <li>- создано:{{object.created_at}}</li>
+                    <li>- изменено:{{object.updated_at}}</li>
                 </ul>
                 <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
             </div>
