@@ -19,7 +19,8 @@
                     <li>- {{object.description}}</li>
                     {% endif %}
                 </ul>
-                {% for version in version_list %}
+                {% if object.versions.all %}
+                {% for version in object.versions.all %}
                 <ul class="list-unstyled mt-3 mb-4 text-start m-3">
                     {% if version.active %}
                     <li> Название версии: {{version.version_name}}</li>
@@ -27,6 +28,9 @@
                     {% endif %}
                 </ul>
                 {% endfor %}
+                 {% else %}
+                    <li> Нет активной версии </li>
+                {% endif %}
                 <a href="{% url 'catalog:product_details' object.pk %}" type="button"
                    class="btn btn-lg btn-block btn-outline-success">Перейти к товару</a>
                 <a href="{% url 'catalog:product_update' object.pk %}" type="button"

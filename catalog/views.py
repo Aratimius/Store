@@ -33,17 +33,6 @@ class ProductListView(ListView):
         'description': 'Это магазин разных товаров',
     }
 
-    def get_context_data(self, **kwargs):
-        context_data = super().get_context_data(**kwargs)
-
-        context_data['version_list'] = Product.versions
-
-        print(self.object_list)
-        print(context_data['version_list'])
-        print(context_data)
-
-        return context_data
-
 
 class ProductDetailView(DetailView):
     """Для подробного описания товара"""
