@@ -1,6 +1,9 @@
 {% extends 'catalog/base.html' %}
 
 {% block content %}
+<div class="col-12 mb-5">
+    <a class="btn btn-success" href="{% url 'catalog:product_create' %}">Добавить товар</a>
+</div>
 <div class="row text-center">
     {% for object in object_list %}
     <div class="col-3">
@@ -16,8 +19,18 @@
                     <li>- {{object.description}}</li>
                     {% endif %}
                 </ul>
+                {% for version in version_list %}
+                <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                    {% if version.active %}
+                    <li> Название версии: {{version.version_name}}</li>
+                    <li> Номер версии: {{version.version_number}}</li>
+                    {% endif %}
+                </ul>
+                {% endfor %}
                 <a href="{% url 'catalog:product_details' object.pk %}" type="button"
-                   class="btn btn-lg btn-block btn-outline-primary">Перейти к товару</a>
+                   class="btn btn-lg btn-block btn-outline-success">Перейти к товару</a>
+                <a href="{% url 'catalog:product_update' object.pk %}" type="button"
+                   class="btn btn-lg btn-block btn-outline-primary">Добавить версию</a>
             </div>
         </div>
     </div>
