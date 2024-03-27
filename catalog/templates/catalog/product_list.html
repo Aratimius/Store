@@ -35,6 +35,8 @@
                    class="btn btn-lg btn-block btn-outline-success">Перейти к товару</a>
                 <a href="{% url 'catalog:product_update' object.pk %}" type="button"
                    class="btn btn-lg btn-block btn-outline-primary">Добавить версию</a>
+                <a href="{% url 'catalog:product_delete' object.pk %}" type="button"
+                   class="btn btn-lg btn-block btn-outline-danger">Удалить товар</a>
             </div>
         </div>
     </div>
