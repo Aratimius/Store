@@ -1,0 +1,67 @@
+[
+  {
+    "model": "blog.blogpost",
+    "pk": 5,
+    "fields": {
+      "title": "Тест",
+      "content": "Это тестовый блог (обновленный)",
+      "preview": "",
+      "creation_date": "2024-02-02",
+      "publication_sign": true,
+      "views": 5,
+      "slug": null
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 13,
+    "fields": {
+      "title": "Test 2",
+      "content": "Test 2",
+      "preview": "",
+      "creation_date": "2024-02-02",
+      "publication_sign": false,
+      "views": 8,
+      "slug": null
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 14,
+    "fields": {
+      "title": "Тест3",
+      "content": "Тест3",
+      "preview": "",
+      "creation_date": "2024-03-14",
+      "publication_sign": true,
+      "views": 3,
+      "slug": null
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 16,
+    "fields": {
+      "title": "Новый блог",
+      "content": "блог как блог",
+      "preview": "",
+      "creation_date": "2024-03-15",
+      "publication_sign": true,
+      "views": 6,
+      "slug": "novyij-blog"
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 17,
+    "fields": {
+      "title": "Марина смотрит",
+      "content": "Прикинь!",
+      "preview": "",
+      "creation_date": "2024-02-02",
+      "publication_sign": true,
+      "views": 0,
+      "slug": "marina-smotrit"
+    }
+  }
+]

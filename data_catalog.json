@@ -1,0 +1,141 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+      "name": "электроника",
+      "description": "электронные товары"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 7,
+    "fields": {
+      "name": "Продукты",
+      "description": "Продукты питания"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 8,
+    "fields": {
+      "name": "бытовая химия",
+      "description": "для дома и быта"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "samsung",
+      "description": "телефон",
+      "preview": "",
+      "category": 6,
+      "price": 11000,
+      "created_at": "2024-03-23T13:20:38.027Z",
+      "updated_at": "2024-03-23T13:20:38.027Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "IPhone",
+      "description": "телефон",
+      "preview": "iphone.jpg",
+      "category": 6,
+      "price": 20000,
+      "created_at": "2024-03-23T15:10:00.943Z",
+      "updated_at": "2024-03-23T15:10:00.943Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Philips",
+      "description": "Телевизор",
+      "preview": "",
+      "category": 6,
+      "price": 30000,
+      "created_at": "2024-02-21T19:15:43Z",
+      "updated_at": "2024-02-21T19:15:44Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "MSI",
+      "description": "Ноутбук MSI Modern 15 B11M-003XRU черного цвета с диагональю экрана 15.6\" создан для повседневной работы. Благодаря процессору Intel Core i3-1115G4 с двухъядерной архитектурой он решает разные задачи и подходит для просмотра фильмов, простых игр. Плавное изображение формирует Intel UHD Graphics ‒ высокоэффективное графическое ядро. IPS-дисплей отображает четкую картинку в Full-HD-качестве, обладая широкими углами обзора.\r\nMSI Modern 15 B11M-003XRU идет без ОС, что позволяет подобрать систему в зависимости от потребностей. Надежным хранилищем для документов, видео, фото служит SSD объемом 256 ГБ. Он позволяет также взаимодействовать с цифровыми данными без задержек. За быстродействие системы отвечает модуль ОЗУ объемом 8 ГБ. Для оптимизации параметров устройства под разные варианты его использования можно воспользоваться приложением MSI Center Pro.",
+      "preview": "",
+      "category": 6,
+      "price": 30000,
+      "created_at": "2024-03-01T13:41:40.275Z",
+      "updated_at": "2024-03-01T13:41:40.275Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "Мышь A4TECH Bloody V7",
+      "description": "Удобный эргономичный дизайн оптической проводной мыши A4 Bloody V7 порадует любителей виртуальной реальности. Три режима стрельбы на левой кнопке помогут вам заполучить мыслимые и немыслимые награды и превысить все рекорды. Специальный индикатор поможет определить, в каком вы сейчас режиме. Время ожидания на отклик составляет всего 1 мс – вы поразитесь скорости реакции этой модели. Функциональные клавиши позволяют экономить ваше время, оптимизируя процесс. Помимо игр, данная модель идеально осуществляет текущую работу, у нее высокие ход действия и четкость. Вам, несомненно, понравится то, как модель A4 Bloody V7 лежит в руке – удобство и комфорт станут вашими привычными ощущениями. А дополнительные функции по достоинству оценят те, кто покоряет самые разные видеоигры.",
+      "preview": "products/bloody.webp",
+      "category": 6,
+      "price": 1800,
+      "created_at": "2024-03-21T02:11:58.179Z",
+      "updated_at": "2024-03-21T02:11:58.179Z"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 3,
+      "version_number": 11,
+      "version_name": "ProMax",
+      "active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 3,
+      "version_number": 13,
+      "version_name": "ProMax",
+      "active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 3,
+      "version_number": 14,
+      "version_name": "Classic",
+      "active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 1,
+      "version_number": 11,
+      "version_name": "S",
+      "active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 3,
+      "version_number": 15,
+      "version_name": "ProMax",
+      "active": true
+    }
+  }
+]

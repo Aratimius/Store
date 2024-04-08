@@ -6,17 +6,21 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('catalog', '0001_initial'),
+        ("catalog", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='category',
-            options={'ordering': ('name',), 'verbose_name': 'категория', 'verbose_name_plural': 'категории'},
+            name="category",
+            options={
+                "ordering": ("name",),
+                "verbose_name": "категория",
+                "verbose_name_plural": "категории",
+            },
         ),
         migrations.AlterField(
-            model_name='category',
-            name='description',
-            field=models.TextField(max_length=100, verbose_name='описание'),
+            model_name="category",
+            name="description",
+            field=models.TextField(max_length=100, verbose_name="описание"),
         ),
     ]

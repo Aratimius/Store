@@ -6,28 +6,35 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0002_alter_blogpost_creation_date_alter_blogpost_views'),
+        ("blog", "0002_alter_blogpost_creation_date_alter_blogpost_views"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='blogpost',
-            name='slug',
-            field=models.CharField(blank=True, max_length=150, null=True, verbose_name='slug'),
+            model_name="blogpost",
+            name="slug",
+            field=models.CharField(
+                blank=True, max_length=150, null=True, verbose_name="slug"
+            ),
         ),
         migrations.AlterField(
-            model_name='blogpost',
-            name='creation_date',
-            field=models.DateField(blank=True, default='2024-03-15', null=True, verbose_name='дата создания'),
+            model_name="blogpost",
+            name="creation_date",
+            field=models.DateField(
+                blank=True,
+                default="2024-03-15",
+                null=True,
+                verbose_name="дата создания",
+            ),
         ),
         migrations.AlterField(
-            model_name='blogpost',
-            name='publication_sign',
-            field=models.BooleanField(default=True, verbose_name='опубликовано'),
+            model_name="blogpost",
+            name="publication_sign",
+            field=models.BooleanField(default=True, verbose_name="опубликовано"),
         ),
         migrations.AlterField(
-            model_name='blogpost',
-            name='views',
-            field=models.IntegerField(default=0, verbose_name='колличество просмотров'),
+            model_name="blogpost",
+            name="views",
+            field=models.IntegerField(default=0, verbose_name="колличество просмотров"),
         ),
     ]

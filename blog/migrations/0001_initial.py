@@ -7,24 +7,42 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='BlogPost',
+            name="BlogPost",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=150, verbose_name='заголовок')),
-                ('content', models.TextField(verbose_name='содержимое')),
-                ('preview', models.ImageField(blank=True, null=True, upload_to='', verbose_name='изображение')),
-                ('creation_date', models.DateField(verbose_name='дата создания')),
-                ('publication_sign', models.BooleanField(verbose_name='признак публикации')),
-                ('views', models.PositiveIntegerField(verbose_name='колличество просмотров')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=150, verbose_name="заголовок")),
+                ("content", models.TextField(verbose_name="содержимое")),
+                (
+                    "preview",
+                    models.ImageField(
+                        blank=True, null=True, upload_to="", verbose_name="изображение"
+                    ),
+                ),
+                ("creation_date", models.DateField(verbose_name="дата создания")),
+                (
+                    "publication_sign",
+                    models.BooleanField(verbose_name="признак публикации"),
+                ),
+                (
+                    "views",
+                    models.PositiveIntegerField(verbose_name="колличество просмотров"),
+                ),
             ],
             options={
-                'verbose_name': 'запись',
-                'verbose_name_plural': 'записи',
+                "verbose_name": "запись",
+                "verbose_name_plural": "записи",
             },
         ),
     ]
