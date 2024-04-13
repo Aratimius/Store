@@ -128,7 +128,7 @@ EMAIL_HOST = "smtp.yandex.ru"
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_HOST_USER = "aratimius@yandex.ru"
-EMAIL_HOST_PASSWORD = "SamuraiVaiVai"
+EMAIL_HOST_PASSWORD = "******"
 
 #  При добавлении LoginRequiredMixin  нас перенаправит на страницу, указанную в LOGIN_URL
 LOGIN_URL = "users:login"

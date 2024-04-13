@@ -15,7 +15,8 @@ class BlogPost(models.Model):
         **NULLABLE,
         verbose_name="дата создания"
     )
-    publication_sign = models.BooleanField(default=True, verbose_name="опубликовано")
+    #  Признак публикации
+    publication_sign = models.BooleanField(default=False, verbose_name="опубликовано")
     views = models.IntegerField(default=0, verbose_name="колличество просмотров")
     slug = models.CharField(max_length=150, verbose_name="slug", null=True, blank=True)
 
